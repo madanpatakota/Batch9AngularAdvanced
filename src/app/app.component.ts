@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Batch9AngularAdvanced';
+  Customer = { 
+        Name: 'Robert',
+        Email: 'Robert@gmail.com', 
+        Password: '!@&&*9*'
+     };
 }
