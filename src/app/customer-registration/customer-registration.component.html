@@ -13,6 +13,7 @@
             id="name"
             placeholder="Enter your name"
             [value]="CustomerInfo.Name"
+            #CustomerName
           />
         </div>
       </div>
@@ -27,6 +28,7 @@
             id="email"
             placeholder="Enter your email"
             [value]="CustomerInfo.Email"
+            #CustomerEmail
           />
         </div>
       </div>
@@ -41,6 +43,7 @@
             id="password"
             placeholder="Enter your Password"
             [value]="CustomerInfo.Password"
+            #CustomerPassword
           />
         </div>
       </div>
@@ -57,13 +60,13 @@
           ></textarea>
         </div>
       </div> -->
-      <div class="row">
-        <div class="col-sm-9 offset-sm-3">
-          <button type="submit" class="btn btn-primary btn-block">
-            Submit
-          </button>
-        </div>
-      </div>
     </form>
+    <div class="row">
+      <div class="col-sm-9 offset-sm-3">
+        <button type="submit" class="btn btn-primary btn-block" (click)="evtPostData()">
+          Submit
+        </button>
+      </div>
+    </div>
   </div>
 </div>
