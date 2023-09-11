@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-customer-registration-history',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./customer-registration-history.component.css']
 })
 export class CustomerRegistrationHistoryComponent {
+
+
+  @Input('CustomerRecord') CustomerRecord:any;
+  
+  CustomerRecords:any = [];
+
+  /*Button which is useful for fetch latest records...*/
+  evtGetLatestRecords(){
+    this.CustomerRecords.push(this.CustomerRecord)
+  }
 
 }
